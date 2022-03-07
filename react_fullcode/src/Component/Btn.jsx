@@ -16,7 +16,6 @@ export default function Btn  () {
     <>
           <h3>
           Count: {count}</h3>
-          
             <button className="
             btn btn-success" 
             onClick={inc}>
