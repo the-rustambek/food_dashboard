@@ -1,0 +1,94 @@
+@import  "../../Assets/Scss/Colors.scss";
+@import "../../Assets/Fonts/fonts.scss";
+
+.sidebar{
+  background-color: $main-dark;
+  width: 105px;
+  border-radius: 0 16px 16px 0;
+  height: 100vh;
+  padding-left: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+
+  &__btn{
+    margin-top: auto;
+    display: block;
+    padding: 24px;
+    padding-left: 8px;
+    border: none;
+    background: none;
+  }
+
+  &__list{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  &__link {
+     
+    padding: 9px;
+    padding-right: 29px;
+    display: inline-block;
+    border-radius: 12px 0px 0px 12px;
+    margin-bottom: 15px;
+    
+    span{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      height: 52px;
+      border-radius: 8px;
+    }
+
+    svg{
+      path{
+        fill: $main-orange;
+      }
+    }
+
+  }
+
+  &__link-active{
+    background-color: $main-bg-color;
+    padding: 8px;
+    padding-right: 29px;
+    display: inline-block;
+    border-radius: 12px 0px 0px 12px;
+    margin-bottom: 15px;
+    
+    span{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      background-color: $main-orange;
+      border-radius: 8px;
+    }
+    svg{
+      path{
+        fill: #fff;
+      }
+    }
+  }
+  
+}
+  
+.logo{
+  padding: 24px;
+  padding-left: 12px;
+  display: inline-block;
+
+  &:hover{
+    opacity: 0.8;
+  }
+
+  &:active{
+    opacity: 0.6;
+  }
+}

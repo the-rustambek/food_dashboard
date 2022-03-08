@@ -1,0 +1,106 @@
+.sidebar {
+  background-color: #1F1D2B;
+  width: 105px;
+  border-radius: 0 16px 16px 0;
+  height: 100vh;
+  padding-left: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sidebar__btn {
+  margin-top: auto;
+  display: block;
+  padding: 24px;
+  padding-left: 8px;
+  border: none;
+  background: none;
+}
+
+.sidebar__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.sidebar__link {
+  padding: 9px;
+  padding-right: 29px;
+  display: inline-block;
+  border-radius: 12px 0px 0px 12px;
+  margin-bottom: 15px;
+}
+
+.sidebar__link span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 8px;
+}
+
+.sidebar__link svg path {
+  fill: #EA7C69;
+}
+
+.sidebar__link-active {
+  background-color: #252836;
+  padding: 8px;
+  padding-right: 29px;
+  display: inline-block;
+  border-radius: 12px 0px 0px 12px;
+  margin-bottom: 15px;
+}
+
+.sidebar__link-active span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 56px;
+  height: 56px;
+  background-color: #EA7C69;
+  border-radius: 8px;
+}
+
+.sidebar__link-active svg path {
+  fill: #fff;
+}
+
+.logo {
+  padding: 24px;
+  padding-left: 12px;
+  display: inline-block;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.6;
+}
+/*# sourceMappingURL=Sidebar.css.map */

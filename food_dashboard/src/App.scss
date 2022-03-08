@@ -1,20 +1,21 @@
-@import url(c:\Users\User\Documents\food_dashboard\food_dashboard\src\Assets\Scss\normalize.css);
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-*, *::before, *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
+@import "./Assets/Fonts/fonts.scss";
+@import "./Assets/Scss/normalize.css";
+@import "./Assets/Scss/Colors.scss";
 
 html {
+  box-sizing:border-box;
+}   
+
+*,*::before,*::after{
+  box-sizing: inherit;
+}
+
+html{
   height: 100%;
 }
 
-body {
-  background-color: #252836;
+body{
+  background-color: $main-bg-color;
   height: 100%;
   padding: 0;
   margin: 0;
@@ -24,12 +25,13 @@ body {
   color: #222;
 }
 
-img {
+img{
   max-width: 100%;
-  height: auto;
+  height: 
+  auto;
 }
 
-.visually-hidden {
+.visually-hidden{
   position: absolute;
   width: 1px;
   height: 1px;
@@ -39,4 +41,3 @@ img {
   clear: rect(0 0 0 0);
   overflow: hidden;
 }
-/*# sourceMappingURL=App.css.map */
