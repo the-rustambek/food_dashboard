@@ -5,6 +5,15 @@ import Logo from "../Lib/Svgs/Logo";
 import "./Sidebar.scss";
 
 const Sidebar = () =>{
+  const handleAddClass = (evt) =>{
+    const links = document.querySelectorAll(".sidebar__link-active");
+
+    links.forEach((link) =>{
+      link.classList.remove("sidebar__link-active")
+    });
+    evt.currentTarget.classList.add("sidebar__link-active");
+  }
+
   return (
     <div className="sidebar">
     <Link className="logo" to="/">
@@ -12,52 +21,57 @@ const Sidebar = () =>{
       </Link>
     <ul className="sidebar__list">
       <li className="sidebar__item">
-          <NavLink to="/" className="sidebar__link" 
-           activeClassName="sidebar__link-active"  exact >
+          <Link to="/" className="sidebar__link sidebar__link-active" 
+           activeClassName="sidebar__link-active"  exact  onClick={handleAddClass}>
           <span className="sidebar__link-item  ">
           <Home />
           </span>
-          </NavLink>
+          </Link>
       </li>
       <li className="sidebar__item">
-          <NavLink to="/discount" className="sidebar__link" 
-           activeClassName="sidebar__link-active" > 
+          <Link to="/discount" className="sidebar__link" 
+           activeClassName="sidebar__link-active" 
+           onClick={handleAddClass}> 
           <span className="sidebar__link-item">
           <Home />
           </span>
-          </NavLink>
+          </Link>
 
       </li>      <li className="sidebar__item">
-          <NavLink to="/graph" className="sidebar__link" 
-           activeClassName="sidebar__link-active" > 
+          <Link to="/graph" className="sidebar__link" 
+           activeClassName="sidebar__link-active" 
+           onClick={handleAddClass}> 
           <span className="sidebar__link-item">
           <Home />
           </span>
-          </NavLink>
+          </Link>
 
       </li>      <li className="sidebar__item">
-          <NavLink to="/order" className="sidebar__link" 
-           activeClassName="sidebar__link-active" > 
+          <Link to="/order" className="sidebar__link" 
+           activeClassName="sidebar__link-active" 
+           onClick={handleAddClass}> 
           <span className="sidebar__link-item">
           <Home />
           </span>
-          </NavLink>
+          </Link>
 
       </li>      <li className="sidebar__item">
-          <NavLink to="/notification" className="sidebar__link" 
-           activeClassName="sidebar__link-active" > 
+          <Link to="/notification" className="sidebar__link" 
+           activeClassName="sidebar__link-active" 
+           onClick={handleAddClass}> 
           <span className="sidebar__link-item">
           <Home />
           </span>
-          </NavLink>
+          </Link>
 
       </li>      <li className="sidebar__item">
-          <NavLink to="/settings" className="sidebar__link" 
-           activeClassName="sidebar__link-active" > 
+          <Link to="/settings" className="sidebar__link" 
+           activeClassName="sidebar__link-active" 
+           onClick={handleAddClass}> 
           <span className="sidebar__link-item">
           <Home />
           </span>
-          </NavLink>
+          </Link>
 
       </li>
  
