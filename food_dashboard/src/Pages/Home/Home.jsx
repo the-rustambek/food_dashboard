@@ -1,3 +1,5 @@
+import { Switch } from "react-router-dom";
+import { Route } from "react-router-dom";
 import HomeContent from "../../Component/HomeContent/HomeContent";
 import HomeTop from "../../Component/HomeTop/HomeTop";
 import "./Home.scss";
@@ -17,7 +19,16 @@ return (
                   <option value="dine out">dine out</option>
                 </select>
               </div>
-              <HomeContent />
+
+                <Switch>
+                
+              <Route path="/:dishtype">
+                  <HomeContent />
+              </Route>
+              <Route path="/">
+                  <HomeContent />
+              </Route>
+                </Switch>
         </div>
         <div className="home__right">
           nima gap

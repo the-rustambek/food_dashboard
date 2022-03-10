@@ -5,7 +5,8 @@ const FoodCard =({img,title,price,available}) =>{
   return(
     <li className="food-item">  
       <img src={img} alt="food pic" />
-      <h3>{title}</h3>    
+      <h3>{title}</h3> 
+         
       <p>{price}$</p>
       <span>{available}
        Bowls available</span>

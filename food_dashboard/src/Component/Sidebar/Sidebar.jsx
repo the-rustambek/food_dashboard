@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+
 import { Link } from "react-router-dom";
 import Home from "../Lib/Svgs/Home";
 import Logo from "../Lib/Svgs/Logo";
@@ -22,7 +22,7 @@ const Sidebar = () =>{
     <ul className="sidebar__list">
       <li className="sidebar__item">
           <Link to="/" className="sidebar__link sidebar__link-active" 
-           activeClassName="sidebar__link-active"  exact  onClick={handleAddClass}>
+              onClick={handleAddClass}>
           <span className="sidebar__link-item  ">
           <Home />
           </span>
@@ -30,7 +30,7 @@ const Sidebar = () =>{
       </li>
       <li className="sidebar__item">
           <Link to="/discount" className="sidebar__link" 
-           activeClassName="sidebar__link-active" 
+            
            onClick={handleAddClass}> 
           <span className="sidebar__link-item">
           <Home />
@@ -39,7 +39,7 @@ const Sidebar = () =>{
 
       </li>      <li className="sidebar__item">
           <Link to="/graph" className="sidebar__link" 
-           activeClassName="sidebar__link-active" 
+            
            onClick={handleAddClass}> 
           <span className="sidebar__link-item">
           <Home />
@@ -48,7 +48,7 @@ const Sidebar = () =>{
 
       </li>      <li className="sidebar__item">
           <Link to="/order" className="sidebar__link" 
-           activeClassName="sidebar__link-active" 
+            
            onClick={handleAddClass}> 
           <span className="sidebar__link-item">
           <Home />
@@ -57,7 +57,7 @@ const Sidebar = () =>{
 
       </li>      <li className="sidebar__item">
           <Link to="/notification" className="sidebar__link" 
-           activeClassName="sidebar__link-active" 
+            
            onClick={handleAddClass}> 
           <span className="sidebar__link-item">
           <Home />
@@ -66,7 +66,7 @@ const Sidebar = () =>{
 
       </li>      <li className="sidebar__item">
           <Link to="/settings" className="sidebar__link" 
-           activeClassName="sidebar__link-active" 
+            
            onClick={handleAddClass}> 
           <span className="sidebar__link-item">
           <Home />
