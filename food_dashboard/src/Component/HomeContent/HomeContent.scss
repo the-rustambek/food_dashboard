@@ -1,0 +1,39 @@
+.home-content{
+  padding: 0 38px 50px 10px;
+  height: 50%;
+  overflow-y: auto;
+  
+ 
+
+  &__list{
+    
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  
+
+}
+
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e0610d; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

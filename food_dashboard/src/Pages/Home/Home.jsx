@@ -13,7 +13,8 @@ return (
                <h2 className="home__middle-title">
                   Choose Dishes</h2>
               <select className="home__middle-select">
-                  <option value="alo">alo</option>
+                  <option value="dine in">dine in</option>
+                  <option value="dine out">dine out</option>
                 </select>
               </div>
               <HomeContent />
