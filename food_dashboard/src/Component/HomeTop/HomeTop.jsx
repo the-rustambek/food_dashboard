@@ -8,7 +8,7 @@ const HomeTop = () =>{
       <div className="home-top__header">
         <div className="user">
           <h2 className="user__name">
-            Anvarjon Solijonov
+           Rustambek Mamadaliyev
           </h2>
           <p className="user__date">{date()}</p>
         </div>
@@ -22,19 +22,24 @@ const HomeTop = () =>{
         <ul className="nested-links">
           <li className="nested-links__item">
             <NavLink
-             className="nested-links__link" exact 
-             activeClassName="nested-links__link-active" to="/">Hot Dishes</NavLink>
+             className="nested-links__link"  
+             activeClassName="nested-links__link-active" exact   to="/">Hot Dishes</NavLink>
           </li>
           <li className="nested-links__item">
-            <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact to="/cold_dishes">Cold Dishes</NavLink>
+            <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact  
+              to="/cold_dishes">Cold Dishes</NavLink>
           </li>   <li className="nested-links__item">
-            <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact to="/soup">Soup</NavLink>
+            <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact  
+              to="/soup">Soup</NavLink>
           </li>   <li className="nested-links__item">
-            <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact to="/grill">Grill</NavLink>
+            <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact  
+              to="/grill">Grill</NavLink>
           </li>   <li className="nested-links__item">
-            <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact to="/appetizer">Appetizer</NavLink>
+            <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact  
+              to="/appetizer">Appetizer</NavLink>
           </li>   <li className="nested-links__item">
-            <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact to="/desert">Desert</NavLink>
+            <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact  
+              to="/desert">Desert</NavLink>
           </li>
         </ul>
       </div>

@@ -26,9 +26,9 @@ import img25 from "../Img/25.jpg"
 import img26 from "../Img/26.jpg"
 import img27 from "../Img/27.jpg"
 import img28 from "../Img/28.jpg"
-import img29 from "../Img/29.jpg"
+ 
 import img30 from "../Img/30.jpg"
-import img31 from "../Img/31.jpg"
+ 
 import img32 from "../Img/32.jpg"
 import img33 from "../Img/33.jpg"
 import img34 from "../Img/34.jpg"

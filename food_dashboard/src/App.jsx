@@ -2,6 +2,7 @@ import { Route } from 'react-router-dom';
 import { Switch } from 'react-router-dom';
 import './App.scss';
 import Sidebar from './Component/Sidebar/Sidebar';
+import DiscountPage from './Pages/DiscountPage/DiscountPage';
 import Home from './Pages/Home/Home';
  
 function App() {
@@ -10,22 +11,22 @@ function App() {
         <Sidebar />
       <div className="app__content">
             <Switch>
-                  <Route path="/">
+                  <Route path="/"  >
                         <Home />      
                   </Route>
-                  <Route path="/discount" exact>
-                        Discount      
+                  <Route path="/discount" exact >
+                        <DiscountPage />
                   </Route>            
-                        <Route path="/graph" exact>
+                        <Route path="/graph"exact >
                         graph  
                   </Route>                 
-                   <Route path="/order" exact>
+                   <Route path="/order"exact >
                         Order    
                   </Route>                 
-                   <Route path="/notification" exact>
+                   <Route path="/notification"exact >
                         Notification      
                   </Route>
-                  <Route path="/settings" exact>
+                  <Route path="/settings"exact >
                         settings      
                   </Route>
             </Switch>

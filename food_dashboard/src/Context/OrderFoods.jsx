@@ -8,7 +8,7 @@ function Provider({children}){
   useState([]);
   return (
     <Context.Provider 
-    value={{orderFoods,setOrderFoods}} >
+    value={{orderFoods, setOrderFoods}} >
       {children}
       </Context.Provider>
   )

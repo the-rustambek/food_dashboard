@@ -6,10 +6,10 @@
   align-items: center;
   flex-direction: column;
   padding: 15px ;
-background: #1F1D2B;
-border-radius: 16px;
-margin:50px 18px;
-position: relative;
+  background: #1F1D2B;
+  border-radius: 16px;
+  margin:50px 18px;
+  position: relative;
 
   img{
     position: absolute;
@@ -54,22 +54,17 @@ position: relative;
   }
   p{
     font-style: normal;
-font-weight: 400;
-font-size: 17px;
-line-height: 140%;
-/* identical to box height, or 20px */
-
-text-align: center;
-
-/* White */
-
-color: #FFFFFF;
- 
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
     flex: none;
     order: 0;
     flex-grow: 0;
     margin: 4px 0px;
   }
+  
   span{
     font-style: normal;
     font-weight: 400;

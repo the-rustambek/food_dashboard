@@ -29,7 +29,7 @@ return (
               <Route path="/:dishtype">
                   <HomeContent />
               </Route>
-              <Route path="/">
+              <Route path="/" exact>
                   <HomeContent />
               </Route>
                 </Switch>
