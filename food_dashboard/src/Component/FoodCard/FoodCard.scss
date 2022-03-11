@@ -17,10 +17,26 @@ position: relative;
     height: 139px;
     border-radius: 50%;
     object-fit: cover;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    animation: rotation 15s linear infinite;
+    top: -34%;
+    left: 23%;
+    transform: translate(-50%,0%);
+    animation-name: ImgAnimation;
+    animation-iteration-count:infinite; 
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+  
+  }
+  @keyframes ImgAnimation {
+    from{
+      transform: rotate(0) translate( 0%,  0%)  ;
+      border-radius: 50%;
+    }
+    to{
+      transform: rotate(400deg) translate( 0%, 0%)  ;
+      border-radius:50%;
+    }
+    
   }
   h3{
     font-style: normal;
