@@ -1,6 +1,6 @@
 .home-content{
   padding: 0 38px 50px 10px;
-  height: 50%;
+  height: 40%;
   overflow-y: auto;
   
  
@@ -12,6 +12,10 @@
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
+    justify-content: 
+    space-between;
+    padding-top: 29px;
+    
   }
 
   

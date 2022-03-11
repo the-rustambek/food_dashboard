@@ -1,0 +1,62 @@
+.home {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home-left {
+  width: 70%;
+}
+
+.home__middle {
+  padding: 24px 38px 2px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home__middle-title {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.home__middle-select {
+  border-radius: 8px;
+  padding: 15px 14px;
+  padding-left: 44px;
+  background-color: #1F1D2B;
+  border: 1px solid #393c49;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-position: left 14px center;
+  background-image: url("../../Assets/Img/Mask.png");
+  cursor: pointer;
+  outline: none;
+}
+
+.home__middle-select option {
+  font-size: 16px;
+  text-align: left;
+}
+
+.home__right {
+  height: 100vh;
+  width: 30%;
+  background-color: #1F1D2B;
+}
+/*# sourceMappingURL=Home.css.map */

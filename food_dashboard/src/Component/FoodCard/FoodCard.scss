@@ -1,3 +1,75 @@
 .food-item{
-  width: 30%;
+  width: 25%;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px ;
+background: #1F1D2B;
+border-radius: 16px;
+margin:50px 18px;
+position: relative;
+
+  img{
+    position: absolute;
+    width: 139px;
+    height: 139px;
+    border-radius: 50%;
+    object-fit: cover;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: rotation 15s linear infinite;
+  }
+  h3{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 130%;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    width: 150px;
+    flex-grow: 0;
+    margin: 12px 0px;
+    padding-top: 45px;
+  }
+  p{
+    font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 140%;
+/* identical to box height, or 20px */
+
+text-align: center;
+
+/* White */
+
+color: #FFFFFF;
+ 
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 4px 0px;
+  }
+  span{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    color: #ABBBC2;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 4px 0px;
+    
+    .food-span{
+      padding-left: 8px;
+    }
+  }
+  
 }
+

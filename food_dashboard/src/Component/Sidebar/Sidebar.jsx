@@ -1,6 +1,12 @@
 
 import { Link } from "react-router-dom";
+import Discount from "../Lib/Svgs/Discount";
 import Home from "../Lib/Svgs/Home";
+import Graph from "../Lib/Svgs/Graph";
+import Message from "../Lib/Svgs/Message";
+import Notification from "../Lib/Svgs/Notification";
+import Settings from "../Lib/Svgs/Settings";
+import Logout from "../Lib/Svgs/Logout";
 import Logo from "../Lib/Svgs/Logo";
 import "./Sidebar.scss";
 
@@ -33,7 +39,7 @@ const Sidebar = () =>{
             
            onClick={handleAddClass}> 
           <span className="sidebar__link-item">
-          <Home />
+          <Discount />
           </span>
           </Link>
 
@@ -42,16 +48,16 @@ const Sidebar = () =>{
             
            onClick={handleAddClass}> 
           <span className="sidebar__link-item">
-          <Home />
+          <Graph />
           </span>
           </Link>
 
       </li>      <li className="sidebar__item">
-          <Link to="/order" className="sidebar__link" 
+          <Link to="/message" className="sidebar__link" 
             
            onClick={handleAddClass}> 
           <span className="sidebar__link-item">
-          <Home />
+          <Message />
           </span>
           </Link>
 
@@ -60,7 +66,7 @@ const Sidebar = () =>{
             
            onClick={handleAddClass}> 
           <span className="sidebar__link-item">
-          <Home />
+          <Notification />
           </span>
           </Link>
 
@@ -69,7 +75,7 @@ const Sidebar = () =>{
             
            onClick={handleAddClass}> 
           <span className="sidebar__link-item">
-          <Home />
+          <Settings />
           </span>
           </Link>
 
@@ -77,7 +83,7 @@ const Sidebar = () =>{
  
     </ul>
     <button className="sidebar__btn">
-      <Home />
+      <Logout />
       </button>
     </div>
   )

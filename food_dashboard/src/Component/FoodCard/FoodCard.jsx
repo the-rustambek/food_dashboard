@@ -9,8 +9,8 @@ const FoodCard =({img,title,price,available
       <h3>{title}</h3> 
       <p>{price}$</p>
       <span>
-        {available}
-       Bowls available
+       <b> {available  }</b>
+       <span className="food-span">Bowls available</span>
        </span>
     </li>
   )
