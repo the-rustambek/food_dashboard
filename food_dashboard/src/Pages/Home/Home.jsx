@@ -1,10 +1,14 @@
+import { useContext } from "react";
 import { Switch } from "react-router-dom";
 import { Route } from "react-router-dom";
 import HomeContent from "../../Component/HomeContent/HomeContent";
 import HomeTop from "../../Component/HomeTop/HomeTop";
+import { Context } from "../../Context/OrderFoods";
 import "./Home.scss";
 
 const Home = () =>{
+  const {orderFoods,SetOrderFoods} = 
+  useContext(Context);
 return (
       <div className="home">
         <div className="home-left">
@@ -31,7 +35,21 @@ return (
                 </Switch>
         </div>
         <div className="home__right">
-          nima gap
+          {orderFoods.length > 0 && (
+            <ul>
+             {orderFoods.map((food)=>(
+                <li key={food.id}>
+                <span>
+{food.title}
+                </span>
+                <code>
+                  {food.number}
+                </code>
+                <button>&times;</button>
+              </li>
+             ))}
+            </ul>
+          )}
         </div>
       </div>
 )

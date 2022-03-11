@@ -10,7 +10,7 @@ from "../../Context/OrderFoods";
 
 const HomeContent = () =>{    
   const  {dishtype} = useParams();
-  const {foods:orderFoods, setFoods} = useContext(Context);
+  const {orderFoods, setOrderFoods} = useContext(Context);
   // console.log(orderFoods)
   return(
     <div className="home-content">
@@ -31,10 +31,12 @@ const HomeContent = () =>{
                 available={food.available} 
                 onClick={(e) => 
                 {
-                  const foundFood = foods.find(
-                    (ovqat) => ovqat.id === food.id
-                  );
-                  console.log(foundFood)
+                    const foundFood = foods.find(
+                      (ovqat) => ovqat.id === food.id
+                    );
+                    console.log(foundFood)
+                    setOrderFoods([...orderFoods,foundFood])
+                    console.log(orderFoods)
                 }
               } 
                 />        
