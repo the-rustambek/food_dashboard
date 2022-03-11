@@ -35,6 +35,33 @@ return (
                 </Switch>
         </div>
         <div className="home__right">
+            <h2 className="home__right-title">
+              Order #34562
+            </h2>
+            <div className="home__right-box">
+              <button className="home__right-btn">
+                Dine In
+              </button>
+              <button className="home__right-btn">
+                To Go
+              </button><button className="home__right-btn">
+                Delivery
+              </button>
+            </div>
+            <div className="home__right__header">
+              <p className="home__right__header-text">
+                Item
+              </p>
+              <span>
+                <p className="home__right__header-subtext">
+                  Qty
+                </p>
+                <p className="home__right__header-subtext">
+                  Price
+                </p>
+              </span>
+            </div>
+
           {orderFoods.length > 0 && (
             <ul>
              {orderFoods.map((food)=>(

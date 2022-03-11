@@ -28,12 +28,46 @@
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
-  top: 0%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-animation: rotation 15s linear infinite;
-          animation: rotation 15s linear infinite;
+  top: -34%;
+  left: 23%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  -webkit-animation-name: ImgAnimation;
+          animation-name: ImgAnimation;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes ImgAnimation {
+  from {
+    -webkit-transform: rotate(0) translate(0%, 0%);
+            transform: rotate(0) translate(0%, 0%);
+    border-radius: 50%;
+  }
+  to {
+    -webkit-transform: rotate(400deg) translate(0%, 0%);
+            transform: rotate(400deg) translate(0%, 0%);
+    border-radius: 50%;
+  }
+}
+
+@keyframes ImgAnimation {
+  from {
+    -webkit-transform: rotate(0) translate(0%, 0%);
+            transform: rotate(0) translate(0%, 0%);
+    border-radius: 50%;
+  }
+  to {
+    -webkit-transform: rotate(400deg) translate(0%, 0%);
+            transform: rotate(400deg) translate(0%, 0%);
+    border-radius: 50%;
+  }
 }
 
 .food-item h3 {
@@ -61,9 +95,7 @@
   font-weight: 400;
   font-size: 17px;
   line-height: 140%;
-  /* identical to box height, or 20px */
   text-align: center;
-  /* White */
   color: #FFFFFF;
   -webkit-box-flex: 0;
       -ms-flex: none;
