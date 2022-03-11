@@ -7,7 +7,7 @@ import { Context } from "../../Context/OrderFoods";
 import "./Home.scss";
 
 const Home = () =>{
-  const {orderFoods,SetOrderFoods} = 
+  const {orderFoods,setOrderFoods} = 
   useContext(Context);
 return (
       <div className="home">
@@ -45,7 +45,10 @@ return (
                 <code>
                   {food.number}
                 </code>
-                <button>&times;</button>
+                <button onClick={() =>{
+                  setOrderFoods(orderFoods.filter(ovqat => ovqat.id !== food.id))
+                }}>&times;</button>
+                <em>{food.price * food.number}</em>
               </li>
              ))}
             </ul>

@@ -34,9 +34,13 @@ const HomeContent = () =>{
                     const foundFood = foods.find(
                       (ovqat) => ovqat.id === food.id
                     );
-                    console.log(foundFood)
-                    setOrderFoods([...orderFoods,foundFood])
-                    console.log(orderFoods)
+                    foundFood.number = foundFood.number ? foundFood.number + 1 : 1;
+                    const uniqueArr = [
+                      ...new Set([...orderFoods,foundFood])
+                    ]
+                    // console.log(foundFood)
+                    setOrderFoods(uniqueArr)
+                    // console.log(orderFoods)
                 }
               } 
                 />        
