@@ -13,10 +13,11 @@
   }
 
   &__middle{
-    padding: 24px 38px 2px 10px;
+    padding: 24px 10px 2px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
     
     &-title{
       font-weight: 600;
@@ -39,10 +40,13 @@
       background-image: url("../../Assets/Img/Mask.png");
     cursor: pointer;
     outline: none;
+    
 
     option{
+      z-index: 1;
       font-size: 16px;
       text-align: left;
+      
     }
     }
   }

@@ -19,8 +19,9 @@ return (
                <h2 className="home__middle-title">
                   Choose Dishes</h2>
               <select className="home__middle-select">
-                  <option value="dine in">dine in</option>
-                  <option value="dine out">dine out</option>
+                  <option value="Dine In">Dine In</option>
+                  <option value="To Go">To Go</option>
+                  <option value="Delivery">Delivery</option>
                 </select>
               </div>
 
