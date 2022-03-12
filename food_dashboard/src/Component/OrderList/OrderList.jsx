@@ -1,11 +1,20 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
+import { Link } from "react-router-dom";
 import { Context } from "../../Context/OrderFoods";
 
 import Delete from "../Lib/Svgs/Delete";
+
 import "./OrderList.scss";
+import "../Modal/Modal.scss"
+import Modal from "../Modal/Modal";
 
 const OrderList = () =>{
 const {orderFoods,setOrderFoods} = useContext(Context);
+const [paymentModal, setPaymentModal] =  useState(false);
+function openPaymentModal(){
+  setPaymentModal(!paymentModal)
+  } 
+
 return (
 <>
   {orderFoods.length > 0 && (
@@ -59,12 +68,28 @@ return (
         <p>Sub Total</p>
         <b>$21,03</b>
       </span>
-      <button className="order-footer-btn">
+
+      <button className="order-footer-btn" 
+       onClick={openPaymentModal}> 
         Continue to Payment
       </button>
+       
     </div>
   </>
   )}
+    <Modal className="modal"
+     show={paymentModal} w={600} mh={400}>
+    <button className="close-btn" 
+    onClick={()=>setPaymentModal()}>
+                    &times;
+                </button>
+       <h3 className="modal-title">
+      Nima gap
+
+       </h3>
+      
+    </Modal>
+   
 </>
 )
 }

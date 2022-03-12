@@ -27,7 +27,8 @@ const Sidebar = () =>{
       </Link>
     <ul className="sidebar__list">
       <li className="sidebar__item">
-          <Link to="/" className="sidebar__link sidebar__link-active" 
+          <Link to="/" className="sidebar__link 
+          sidebar__link-active"  
               onClick={handleAddClass}>
           <span className="sidebar__link-item  ">
           <Home />
