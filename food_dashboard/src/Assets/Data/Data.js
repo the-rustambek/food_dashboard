@@ -54,8 +54,8 @@ import img40 from "../Img/40.jpg"
 // import img54 from "../Img/54.jpg"
 // import img55 from "../Img/55.jpg"
 // import img56 from "../Img/56.jpg"
-
-
+// import deleteIcon from "../../Component/Lib/Svgs/Delete.jsx"
+ 
 
 
 
@@ -66,7 +66,8 @@ const foods = [
     title: "Spicy seasoned seafood noodles",
     price: 2.29,
     available: 20,
-    type: "hot-dishes"
+    type: "hot-dishes", 
+    
   },
   {
     id: 2,  

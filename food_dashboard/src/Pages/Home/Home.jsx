@@ -1,19 +1,19 @@
-import { useContext } from "react";
+ 
 import { Switch } from "react-router-dom";
 import { Route } from "react-router-dom";
 import HomeContent from "../../Component/HomeContent/HomeContent";
 import HomeTop from "../../Component/HomeTop/HomeTop";
-import { Context } from "../../Context/OrderFoods";
+ import OrderList from "../../Component/OrderList/OrderList";
 import "./Home.scss";
 
 const Home = () =>{
-  const {orderFoods,setOrderFoods} = 
-  useContext(Context);
+ 
 return (
       <div className="home">
         <div className="home-left">
             <div>
                 <HomeTop />
+                
               </div>
            <div className="home__middle">
                <h2 className="home__middle-title">
@@ -62,24 +62,9 @@ return (
               </span>
             </div>
 
-          {orderFoods.length > 0 && (
-            <ul>
-             {orderFoods.map((food)=>(
-                <li key={food.id}>
-                <span>
-{food.title}
-                </span>
-                <code>
-                  {food.number}
-                </code>
-                <button onClick={() =>{
-                  setOrderFoods(orderFoods.filter(ovqat => ovqat.id !== food.id))
-                }}>&times;</button>
-                <em>{food.price * food.number}</em>
-              </li>
-             ))}
-            </ul>
-          )}
+       <OrderList />
+
+      
         </div>
       </div>
 )

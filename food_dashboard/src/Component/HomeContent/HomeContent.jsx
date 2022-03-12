@@ -28,6 +28,7 @@ const HomeContent = () =>{
                 img={food.img}
                 title={food.title} 
                 price={food.price} 
+                
                 available={food.available} 
                 onClick={(e) => 
                 {

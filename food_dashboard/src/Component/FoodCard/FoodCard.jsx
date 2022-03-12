@@ -1,3 +1,4 @@
+
 import "./FoodCard.scss";
 
 const FoodCard =({img,title,price,available
@@ -8,6 +9,7 @@ const FoodCard =({img,title,price,available
       <img src={img} alt="food pic" />
       <h3>{title}</h3> 
       <p>{price}$</p>
+      
       <span>
        <b> {available  }</b>
        <span className="food-span">Bowls available</span>

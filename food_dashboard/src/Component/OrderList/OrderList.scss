@@ -1,0 +1,120 @@
+ul,ol{
+  list-style: none;
+}
+.order-foods-list{
+  padding: 10px 0;
+  padding-left: 0;
+  overflow:auto;
+  
+  height: 60vh;
+  padding-right: 15px;
+  
+.order-food{
+  padding: 10px;
+  padding-left: 0;
+  padding-right: 15px;
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+  &__left{
+    display: flex;
+    img{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+    &__title{
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 100%;
+      color: #FFFFFF;
+    }
+    &__text{
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 80%;
+      color: #ABBBC2;
+    }
+    span{
+      padding-left: 10px;
+
+    }
+    
+  }
+
+  &__right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    
+    &-number{
+      background-color: #2D303E;
+      border: 1px solid #393C49;
+      box-sizing: border-box;
+      border-radius: 8px;
+      padding: 2px 15px;
+      width: 48px;
+      height: 42px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    &-price{
+      margin-left: 15px;
+      // width: 50px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 140%;
+      text-align: right;
+      color: #FFFFFF;
+
+    }
+  }
+
+  &__bottom{
+    padding: 10px 0;
+    padding-top: 0;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+      &-input{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        color: #E0E6E9;
+        /* Base / Form BG */
+
+background: #2D303E;
+/* Base / Dark Line */
+
+border: 1px solid #393C49;
+box-sizing: border-box;
+border-radius: 8px;
+padding: 10px 14px;
+outline: none;
+width: 332px;
+      }
+
+      &-btn{
+   background-color:transparent;
+border-radius: 8px;
+border: 1px solid #FF7CA3;
+padding:3px 5px;
+width: 48px;
+height: 46px;
+display: flex;
+justify-content: center;
+align-items: center;
+      }
+  }
+}
+
+}

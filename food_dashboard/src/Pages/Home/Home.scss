@@ -51,6 +51,7 @@
     width: 30%;
     background-color: $main-dark;
     padding:20px 15px;
+    padding-right: 0;
 
     &-title{
       font-style: normal;
@@ -97,6 +98,7 @@
       align-items: center;
       padding-bottom: 0px;
       border-bottom: 1px solid #393C49;
+      padding-right: 25px;
 
       &-text{
         font-style: normal;
@@ -108,7 +110,7 @@
         
       }
       span{
-        width: 90px;
+        width: 100px;
         display: flex;
         justify-content: space-between;
         align-items: center;
