@@ -1,0 +1,100 @@
+.most-order{
+    background: #1F1D2B;
+    border-radius: 8px;
+    padding: 20px;
+
+    .most-top{
+      display: flex;
+      justify-content: space-between
+      ;
+      align-items: center;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #393C49;
+      select{
+        border-radius: 8px;
+        padding: 12px;
+        padding-left: 44px;
+        background-color: #1F1D2B;
+        border: 1px solid #393c49;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 130%;
+        color: #fff;
+        background-repeat: no-repeat;
+        background-position: left 14px center;
+        background-image: url("../../Assets/Img/Mask.png");
+        cursor: pointer;
+        outline: none;
+  
+        option{
+          font-size: 16px;
+          text-align: left;
+        }
+      }
+      .most-title{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 140%;
+      }
+    }
+
+    .most-list{
+      // background-color: red;
+        padding-left: 0;
+      .most-item{
+        display: flex;
+        align-items: center;
+        margin: 0px 0;
+        padding: 5px;
+        // background-color: red;
+        .most-img{
+          width: 54px;
+          height: 54px;
+          border-radius: 50%;
+        }
+        span{
+          padding-left: 15px;
+          h4{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 100%;
+            color: #E0E6E9;
+            padding-top: 15px;
+          }
+          p{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 140%;
+            color: #ABBBC2;
+          }
+        }
+
+      }
+    }
+
+    .most-btn{
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 100%;
+      border-radius: 8px;
+      color: #EA7C69;
+      border: 2px solid #EA7C69;
+      width: 100%;
+      background-color: transparent;
+      transition: 0.3s;
+      text-align: center;
+      padding: 12px 10px;
+    }
+    .most-btn:hover{
+      color: white;
+      background-color: #EA7C69;
+      transform: scale(0.95);
+    }
+
+
+}

@@ -35,6 +35,8 @@ return (
               </Route>
                 </Switch>
         </div>
+
+        
         <div className="home__right">
             <h2 className="home__right-title">
               Order #34562

@@ -2,23 +2,24 @@
 
 
 .dashboard-page {
-  display: flex;
-  justify-content: space-between;
+      display: flex;
+      justify-content: space-between;
+      padding-right: 18px;
     .dashboard-left{
       width: 70%;
       padding: 10px;
     }
     .dashboard-right{
       width: 30%;
-      background-color: $main-dark;
-    padding:20px 15px;
-    padding-right: 0;
-    height: 100vh;
-    }
+      background-color: #252836;
+      padding:20px 15px;
+      padding-right: 0;
+      height: 100vh;
+      }
   .dashboard__top {
-    padding: 10px;
-    border-bottom: 1px solid #393C49;
-padding-bottom: 0px;
+      padding: 10px;
+      border-bottom: 1px solid #393C49;
+      padding-bottom: 0px;
     &-title {
       font-style: normal;
       font-weight: 600;

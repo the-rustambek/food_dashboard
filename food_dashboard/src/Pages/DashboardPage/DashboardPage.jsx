@@ -4,9 +4,11 @@ import Dollar from "../../Component/Lib/Svgs/Dollar";
 import Dish from "../../Component/Lib/Svgs/Dish";
 import Bottom from "../../Component/Lib/Svgs/Bottom";
 import Customers from "../../Component/Lib/Svgs/Customer";
-
 import Top from "../../Component/Lib/Svgs/Top";
 import OrderReport from "../../Component/OrderReport/OrderReport";
+import MostOrder from "../../Component/MostOrder/MostOrder";
+import ApexChart from "../../Component/ApexChart/ApexChart";
+
 const DashboardPage = () => {
    return (
      <header className="dashboard-page">
@@ -64,7 +66,8 @@ const DashboardPage = () => {
      </div>
 
      <div className="dashboard-right">
-       alo nima gap
+     <MostOrder />
+     <ApexChart />
      </div>
      </header>
    )
