@@ -28,7 +28,6 @@ const HomeContent = () =>{
                 img={food.img}
                 title={food.title} 
                 price={food.price} 
-                
                 available={food.available} 
                 onClick={(e) => 
                 {
@@ -42,6 +41,7 @@ const HomeContent = () =>{
                     ]
                     // console.log(foundFood)
                     setOrderFoods(uniqueArr)
+                    // (window.localStorage.getItem("orderFoods",JSON.stringify(setOrderFoods))) 
                     // console.log(orderFoods)
                 }
               } 

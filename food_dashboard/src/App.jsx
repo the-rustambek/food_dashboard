@@ -2,6 +2,7 @@ import { Route } from 'react-router-dom';
 import { Switch } from 'react-router-dom';
 import './App.scss';
 import Sidebar from './Component/Sidebar/Sidebar';
+import DashboardPage from './Pages/DashboardPage/DashboardPage';
 import DiscountPage from './Pages/DiscountPage/DiscountPage';
 import Home from './Pages/Home/Home';
  
@@ -18,8 +19,8 @@ function App() {
                         <Route path="/graph"exact >
                         graph  
                   </Route>                 
-                   <Route path="/order"exact >
-                        Order    
+                   <Route path="/dashboard"exact >
+                        <DashboardPage />   
                   </Route>     
 
                      <Route path="/message" exact >

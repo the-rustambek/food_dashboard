@@ -77,7 +77,7 @@ return (
     </div>
   </>
   )}
-    <Modal className="modal"
+    {/* <Modal className="modal"
      show={paymentModal} w={600} mh={400}>
     <button className="close-btn" 
     onClick={()=>setPaymentModal()}>
@@ -88,7 +88,7 @@ return (
 
        </h3>
       
-    </Modal>
+    </Modal> */}
    
 </>
 )

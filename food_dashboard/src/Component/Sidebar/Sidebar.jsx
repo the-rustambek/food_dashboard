@@ -36,8 +36,7 @@ const Sidebar = () =>{
           </Link>
       </li>
       <li className="sidebar__item">
-          <Link to="/discount" className="sidebar__link" 
-            
+          <Link to="/discount" className="sidebar__link"  
            onClick={handleAddClass}> 
           <span className="sidebar__link-item">
           <Discount />
@@ -45,7 +44,7 @@ const Sidebar = () =>{
           </Link>
 
       </li>      <li className="sidebar__item">
-          <Link to="/graph" className="sidebar__link" 
+          <Link to="/dashboard" className="sidebar__link" 
             
            onClick={handleAddClass}> 
           <span className="sidebar__link-item">

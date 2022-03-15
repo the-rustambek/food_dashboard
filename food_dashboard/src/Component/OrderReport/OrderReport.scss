@@ -1,0 +1,117 @@
+
+.report{
+  
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin: 10px;
+  margin-top: 0;
+  padding-top: 5px;
+  
+.report-top{
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    padding-bottom: 15px;
+  .report-title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: #FFFFFF;
+  }
+  .report-btn{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #FFFFFF;
+    background: #1F1D2B;
+    width: 138px;
+    height: 45px;
+    padding:15px 12px;
+    border: 1px solid #393C49;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+      padding-top: 15px;
+      margin-left: 8px;
+    }
+  }
+}
+
+
+  .report-list{
+    .report-table{
+      width: 100%;
+      thead{
+        padding: 10px;
+        border-bottom: 1px solid #393C49;
+        
+          th{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 140%;
+            color: #FFFFFF;
+            padding-bottom: 10px;
+          }
+      }
+      tbody{
+        ::-webkit-scrollbar {
+          width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 5px grey; 
+          border-radius: 10px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+          background:#EA7C69; 
+          border-radius: 10px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+          background: #EA7C69; 
+        }
+        height: 30%;
+  overflow: scroll;
+  
+        td{
+          padding: 10px 0;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 140%;
+          color: #E0E6E9;
+        }
+        td:nth-child(1){
+          display: flex;
+          // justify-content: center;
+          align-items: center;
+          p{
+            padding-top: 10px;
+            padding-left: 15px;
+          }
+        }
+        td:nth-child(4) span{
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 130%;
+          background: rgba(107, 226, 190, 0.24);
+          border-radius: 30px;
+          color: #50D1AA;
+          padding: 6px 25px;
+          width: 101px;
+          height: 26px;
+          
+        }
+      }
+    }
+  }
+}

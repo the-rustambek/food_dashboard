@@ -1,0 +1,112 @@
+@import "../../Assets/Scss/Colors.scss";
+
+
+.dashboard-page {
+  display: flex;
+  justify-content: space-between;
+    .dashboard-left{
+      width: 70%;
+      padding: 10px;
+    }
+    .dashboard-right{
+      width: 30%;
+      background-color: $main-dark;
+    padding:20px 15px;
+    padding-right: 0;
+    height: 100vh;
+    }
+  .dashboard__top {
+    padding: 10px;
+    border-bottom: 1px solid #393C49;
+padding-bottom: 0px;
+    &-title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 140%;
+      color: #FFFFFF;
+    }
+
+    &-date {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      color: #ABBBC2;
+    }
+  }
+
+  .dashboard-section{
+   padding-top: 5px;
+
+    .dashboard__list{
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      
+      &-item{
+        width: 29%;
+        padding: 10px 25px;
+        background: #1F1D2B;
+        border-radius: 8px;
+        padding-bottom: 0px;
+
+          span{
+            display: flex;
+            // justify-content: space-between;
+            align-items: center;
+            // width: 200px;
+            .dashboard-icon{
+                background: #252836;
+                border-radius: 8px;
+                padding: 5px;
+                width: 38px;
+                height: 38px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column; 
+              }
+              .dashboard-pretsent{
+                color: #50D1AA;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 140%;
+                padding: 0px 25px;
+                padding-top: 12px;
+              }
+          }
+          .dashboard-price{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 140%;
+            color: #FFFFFF;
+            padding: 8px 0;
+            padding-bottom: 4px;
+            letter-spacing: 3px;
+          }
+          .dashboard-total{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 130%;
+            color: #ABBBC2;
+
+          }
+      }
+      &-item:nth-child(2) .dashboard-pretsent{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 140%;
+        color: #FF7CA3;
+      }
+    }
+    
+  }
+  
+}
